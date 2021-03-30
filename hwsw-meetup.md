@@ -1,12 +1,11 @@
 ---
 marp: true
 ---
-
 ## A Docker az ellen is ved
 
 developer experience is the king
 
-> telex clickbait hirado: ... nem derul ki
+> clickbait hirado: ... nem derul ki
 
 ---
 
@@ -42,7 +41,7 @@ developer experience is the king
 
 ---
 
-# Milyen probemat akarunk megoldani?
+# Milyen problemat akarunk megoldani?
 
 - "It was runing on my machine" (tm)
 
@@ -59,6 +58,10 @@ developer experience is the king
 # Mandatory xkcd
 
 ![](https://imgs.xkcd.com/comics/compiling.png)
+
+---
+
+## Context switch
 
 If you have to wait for 2 min
 - you will go for a coffe
@@ -111,6 +114,8 @@ If you have to wait for 2 min
 - swarm / aws ecs / k8s (distro?)
 - monolith / microservices
 
+---
+
 > azt a problemat oldd meg ami a legjobban faj (SequenceIQ/BanzaiCloud)
 
 ---
@@ -119,7 +124,7 @@ If you have to wait for 2 min
  ... a fejlesztoknek is
 
 Use case:
-- A fejlesztoi gep (8GB) elfustol a docker-compose tol
+- A fejlesztoi gep (8GB) elfustol
 
 ---
 
