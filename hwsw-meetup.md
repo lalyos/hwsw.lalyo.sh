@@ -1,6 +1,3 @@
----
-marp: true
----
 ## A Docker az ellen is ved
 
 developer experience is the king
