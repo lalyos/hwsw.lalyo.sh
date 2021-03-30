@@ -2,9 +2,11 @@
 marp: true
 ---
 
-# A Docker az ellen is ved
+## A Docker az ellen is ved
 
 developer experience is the king
+
+> telex clickbait hirado: ... nem derul ki
 
 ---
 
@@ -23,10 +25,10 @@ developer experience is the king
 > Soiler alert: IGEN
 
 ---
-# Dilbert knows everything
 
-![dilbert](https://pbs.twimg.com/media/EDrZEKCWwAAG_Ty?format=jpg&name=large)
+# Mandatory Dilbert
 
+![dilbert](https://i.imgur.com/oN4cTgu.jpg)
 
 ---
 
@@ -54,7 +56,7 @@ developer experience is the king
 
 ---
 
-# How much time developes waste?
+# Mandatory xkcd
 
 ![](https://imgs.xkcd.com/comics/compiling.png)
 
@@ -121,7 +123,7 @@ Use case:
 
 ---
 
-# Erdekessegek a nagyvilagbol
+## Megdobbento: kiderult van mas is mint docker?
 
 - Container that looks like VMs
 - VM / microVM based containers
@@ -169,12 +171,8 @@ Nix ugribugri: reproducible, declarative
 
 ## References
 
-- http://lalyo.sh
-
-- https://github.com/containerd/nerdctl
-- https://nixos.org/
-- https://github.com/weaveworks/footloose
-- https://github.com/firecracker-microvm/firecracker/
-- https://github.com/weaveworks/ignite
+- http://bit.ly/docker-kerdoiv
+- http://hwsw.lalyo.sh/
+- https://hackmd.io/@lalyos/hwswmeetup
 
 
