@@ -29,14 +29,13 @@
 
 ## Cloud Native ???
 
-mit adtak nekunk a romaiak (Docker)?
+mit adtak nekunk a romaiak ( Docker )?
 - solving: "it was running on my machine" (tm)
 - packaging format (tar.gz of layers)
 - containerd + runc
 - microservices [12factor.net](https://12factor.net/)
 
-Kubernetes (k8s)
-> run containers on a lot of servers (cloud/onprem)
+- k8s: run containers on a lot of servers
 
 ---
 
@@ -105,12 +104,78 @@ k8s = CRI (containerd/crio) + runc/kata/firecracker/gvisor/wasm ...
 
 ---
 
-## Policy Enforcement
+## Policy Enforcement - best practices
+
+There are industry wide best practices:
+- dont use ":latest" images
+- restrict image registries
+- use probes (readiness/liveness)
+- readonly root FS
+- drop all capabilities
+- require labels (owner,appname)
+- disallow NodePort
 
 ---
-## Admission Controller - Webhooks
 
-- Api server extensability
+## Policies - how to enforce them
+
+- email word doc to all devs
+- "please sign it on paper"
+- Instead: use a policy/rule engine
+
+---
+
+## Policies - CNCF landscape
+
+- [OPA](https://www.openpolicyagent.org/)
+- [Kyverno](https://kyverno.io/)
+- ...
+- Full list: [cncf landscape: Security and Complience](https://landscape.cncf.io/card-mode?category=security-compliance&grouping=category)
+
+---
+
+## Policy Enforcement - OPA
+
+- OPA: https://www.openpolicyagent.org/
+  - generic (non k8s specific)
+  - own Domain Specific Lang (rego)
+  - steep learning curve
+  - complex
+
+---
+
+## Policy Enforcement - Kyverno
+
+- Kyverno: https://kyverno.io/
+  - k8s specific policy engine
+  - no DSL: plain yaml
+  - easy to read (DN-RTFM)
+  - easy to learn
+  - [predefined policies](https://kyverno.io/policies/) for best practices
+
+---
+
+## Admission Controller
+
 - Builtin: DefaultIng, DefaultStorageCl, LimitRanger, NamespaceLifeCyc, ResourceQuota, ServiceAcc, ...
 
 ![](https://banzaicloud.com/img/blog/admission-webhooks/webhooks.png)
+
+---
+
+## Policies - Kyverno
+
+- require Limits and Requests
+- add network policy (deny all ing/egr)
+- add quota to each NS
+- add labels (mesh)
+- replace image registry: docker.io -> registry.mycorp.com
+- require probes (readiness/liveness)
+- readonly root FS
+- disallow default NS
+
+---
+
+## Keep in touch
+
+- http://hwsw.lalyo.sh/
