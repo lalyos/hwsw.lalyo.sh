@@ -2,7 +2,7 @@
 
 Kubernetes Security Overview
 
-> clickbait hirado: ... nem derul ki
+2021. Junius - Papp Lajos
 
 ---
 
